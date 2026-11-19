@@ -1,2 +1,11 @@
-.idea
-.sum
+
+catalog-enricher
+bin/
+dist/
+
+.env
+.env.local
+
+.idea/
+.vscode/
+.DS_Store
