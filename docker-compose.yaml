@@ -1,0 +1,13 @@
+services:
+  catalog-enricher:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sho-catalog-enricher
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - AI_TIMEOUT_SECONDS=5
+    restart: unless-stopped
