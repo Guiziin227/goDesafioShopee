@@ -16,9 +16,9 @@ const (
 type ItemStatus string
 
 const (
-	ItemStatusPending   ItemStatus = "PENDING"
-	ItemStatusFailed    ItemStatus = "FAILED"
-	ItemStatusCompleted ItemStatus = "COMPLETED"
+	ItemStatusPending ItemStatus = "PENDING"
+	ItemStatusSuccess ItemStatus = "SUCCESS"
+	ItemStatusFailed  ItemStatus = "FAILED"
 )
 
 type Product struct {
